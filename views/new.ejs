@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WISH LIST</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    
+    <%- include('header');  %>
+    <div class="container">
+      <div class="container-header">
+        <h1>叶えたいことを記入してください。</h1>
+      </div>
+      <div class="item-form-wrapper">
+        
+        <form action="/create" method="post" autocomplete="off">
+          <p class="form-label">WISH</p>
+          <input type="text" name="itemName">
+         <br><p class="form-label2">メモ欄</p>
+         <input type="text" name="itemMemo">
+         <br>
+          <p class="form-label2">達成目標日を設定してください。</p>
+          <input type="date" name="itemDate">
+          <input type="submit" value="記録する">
+        </form>
+      </div> 
+      <a href="/index" class="cancel-button">戻る</a>
+    </div>
+  </body>
+</html>

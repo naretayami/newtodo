@@ -1,0 +1,14 @@
+<header>
+ 
+  <a href="/index" class="header-logo">WISH LIST</a>
+    <a href="/index" class="header-logo">一覧</a>
+    <a href="/korekara" class="header-logo">未達成</a>
+    <a href="/acheive" class="header-logo">達成</a>
+      <% if (locals.isLoggedIn) { %>
+        <a href="/logout" class="header-logo">ログアウト</a>
+      <% } else { %>
+        <a href="/signup" class="header-logo">新規登録</a>
+        <a href="/login" class="header-logo">ログイン</a>
+      <% } %> 
+  <p>ようこそ、<%= locals.username %>さん</p>
+</header>

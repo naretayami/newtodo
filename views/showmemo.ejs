@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WISH LIST</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    
+    <%- include('header');  %>
+    <div class="container">
+      <div class="container-header">
+        <h1 class="wishmemo"><%= item.name %></h1>
+        <a href="/memo/<%= item.id %>" class="new-button">メモを編集する</a>
+      </div>        
+        <p>登録日時　　：<%= item.created_at %></p>
+        <p>最終更新日時：<%= item.updated_at %></p>
+
+        <p>達成目標日:<%= item.acheieve_date %></p>
+        <img src="/images/image1.png" class="images">
+        <h3 class="contentmemo"><br><%= item.memo %></h3>
+        <a href="javascript:history.back();" class="cancel-button">一覧に戻る</a>
+    </div>
+  </body>
+</html>

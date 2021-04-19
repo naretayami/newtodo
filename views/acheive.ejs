@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WISH LIST</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    <%- include('header');  %>
+    <div class="container">
+      <div class="container-header">
+        <h1>WISH LIST</h1>
+      </div>
+      <p>ここはWISHを達成したエリアです</p>
+      <div class="index-table-wrapper">
+        <div class="table-head">
+          <span class="id-column">ID</span>
+          <span class="name-column">WISH</span>
+          <span class="newtime">達成日時</span>
+        </div>
+        <ul class="table-body">
+          <% items.forEach((item) => { %>
+            <li>
+              <div class="item-data">
+                <span class="id-column"><%= item.id %></span>
+                <span class="name-column"><%= item.name %></span>
+                <span class="newtime"><%= item.updated_at %></span>
+              </div>
+              <div class="item-menu">
+                <a href="/noeditmemo/<%= item.id %>">メモ</a>
+               </div>
+            </li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WISH LIST</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+   
+    <%- include('header');  %>
+    <div class="container">
+      <div class="container-header">
+        <h1>メモの編集</h1>
+      </div>
+      <div class="item-form-wrapper">
+        <form action="/memoupdate/<%= item.id %>" method="post">
+          <input name ="itemMemo" type="text" value="<%= item.memo %>">
+          <input type="submit" value="メモを記録">
+        </form>
+      </div>
+      <a href="/index" class="cancel-button">一覧に戻る</a>
+    </div>
+  </body>
+</html>

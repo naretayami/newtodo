@@ -1,0 +1,283 @@
+/* reset ================================ */
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100%;
+    line-height: 1.7;
+    letter-spacing: 1px;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  a:hover {
+    transition: all 0.3s ease;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+  
+  h1 {
+    font-weight: 600;
+  }
+  
+  input {
+    font-size   : 100%;
+  }
+
+  /* /top */
+.top-wrapper {
+    max-width: 1200px;
+    min-width: 920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 60px;
+    text-align: center;
+  }
+
+  .top .title {
+    font-size: 54px; 
+  }
+  
+  .top .des {
+    font-size: 14px;
+    text-align: center;
+   
+  }
+  
+  .top .button {
+    width: 200px;
+    height: 48px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 700;
+    color: #0c3cdb;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 2px;
+  }
+
+  .top .button:hover {
+    color: #ffffff;
+    background-color: #0c3cdb;
+  }
+  
+  .button {
+    cursor: pointer;   
+  }
+ 
+/* header ================================ */
+header {
+    height: 56px;
+    background-color: #83a8e0;
+  }
+  
+  .header-logo {
+    margin-left: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    display: inline;
+  }
+  
+  .header-logo:hover {
+    color: #0c3cdb;
+  }
+
+  .header-logo {
+    margin-left: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    display: inline;
+    justify-content: space-between; 
+  }
+
+
+/* container ================================ */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 56px;
+  }
+
+  .container-header {
+    display: flex;
+    justify-content: space-between; /*いい感じに左に寄せておく*/
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .container-header .new-button {
+    background: #0c3cdb;
+    font-size: 14px;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .container-header .new-button:hover {
+    color: #0c3cdb;
+    background-color: #ccc8c8;
+  }
+
+  .container-header .cancel-button {
+    font-weight: 700;
+  }
+  
+  .container-header h1 {
+    font-size: 24px;
+  }
+
+/* /index ================================ */
+.table-head {
+    display: flex;
+    border: 1px solid #000000;
+    background-color: #ccc8c8;
+  
+    line-height: 46px;
+  }
+
+  .id-column {
+    width: 70px;
+    text-align: center; 
+  }
+
+  .name-column {
+    width:300px;
+  }
+ 
+  .table-body li {
+    height: 72px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+ 
+
+  .item-data {
+    display: flex;
+    
+  }
+  
+  .item-menu {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .item-menu form {
+    width: 60px;
+    text-align: center;
+  }
+  
+  .item-menu form input {
+    font-size: 16px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  .item-menu form input:hover {
+    color: #ff0019;
+    transition: all 0.3s ease;
+  }
+
+  .item-menu a {
+    color: #000000;
+    width: 60px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .item-menu a:hover {
+    color: #0c3cdb;
+  }
+
+
+
+/* new, edit ================================ */
+.item-form-wrapper {
+    padding: 32px;
+  }
+
+  .item-form-wrapper input[type="text"] {
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+  }
+
+  .item-form-wrapper input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: #0c3cdb;
+    font-size: 14px;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .cancel-button{
+    text-align: center;
+    font-size: 30ppx;
+  }
+
+  .form-label2 {
+    margin-top: 30px;
+  }
+  
+
+
+  /* showmemo ================================ */
+
+.container-header .wishmemo {
+  font-size: 50px;
+}
+.contentmemo {
+  margin-bottom: 100px;
+}
+
+.images {
+  margin-top: 30px;
+  margin-bottom: -40px;
+  width: 100px;
+  height: auto;
+}
+
+.errors {
+ font-size: 20px;
+ color: #ff0019;
+ margin-top: 20px;
+ margin-bottom: 20px; 
+}

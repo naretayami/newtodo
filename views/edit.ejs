@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WISH LIST</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+   
+    <%- include('header');  %>
+    <div class="container">
+      <div class="container-header">
+        <h1>WISH LISTの編集</h1>
+        
+      </div>
+      <div class="item-form-wrapper">
+        <p class="form-label">WISH</p>
+        <form action="/update/<%= item.id %>" method="post">
+          <input name ="itemName" type="text" value="<%= item.name %>" autocomplete="off">
+          <br><p class="form-label2">メモ</p>
+          <input name="itemMemo" type="text" value="<%= item.memo %>">
+          <br>
+          <p class="form-label2">達成目標日</p>
+          <%= item.acheieve_date %>
+          <!-- <input name="itemDate" type="text" value="<%= item.acheieve_date %>"> -->
+          <input type="submit" value="更新">
+        </form>
+      </div>
+      <a href="/index" class="cancel-button">戻る</a>
+    </div>
+  </body>
+</html>

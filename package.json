@@ -1,0 +1,26 @@
+{
+  "name": "wishlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "nodemon -r './.module' ./app.js"
+  },
+  "author": "rena",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "ejs": "^2.7.4",
+    "express": "^4.16.4",
+    "express-session": "^1.17.1",
+    "mysql": "^2.16.0",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
+
